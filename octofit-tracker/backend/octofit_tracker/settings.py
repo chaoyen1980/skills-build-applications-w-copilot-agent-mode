@@ -25,7 +25,8 @@ SECRET_KEY = "django-insecure-mn%^!o_ypuy0ol#acx@%f2mjw*lum78&(=dwr(*&&_9=%k2(e3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Add Codespace URL and localhost to ALLOWED_HOSTS
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev']
 
 
 # Application definition
@@ -39,10 +40,13 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'tracker_app',
     'octofit_tracker',
+    # Enable CORS for cross-origin requests
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
