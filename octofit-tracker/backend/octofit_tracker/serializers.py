@@ -1,5 +1,5 @@
+from .models import User, Team, Activity, Leaderboard, Workout
 from rest_framework import serializers
-from tracker_app.models import User, Team, Activity, Leaderboard, Workout
 from bson import ObjectId
 
 class ObjectIdField(serializers.Field):

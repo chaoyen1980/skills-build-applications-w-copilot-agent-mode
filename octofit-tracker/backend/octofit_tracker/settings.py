@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'djongo',
-    'tracker_app',
     'octofit_tracker',
     'rest_framework',
     # Enable CORS for cross-origin requests

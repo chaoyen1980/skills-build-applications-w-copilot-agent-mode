@@ -31,3 +31,9 @@ yarn-error.log*
 # Python files
 *.pyc
 __pycache__/
+
+# Ignore the data folder under backend
+octofit-tracker/backend/data/
+
+# Ignore the migrations folder under backend
+octofit-tracker/backend/octofit_tracker/migrations/

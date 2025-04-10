@@ -1,5 +1,4 @@
 from django.core.management.base import BaseCommand
-from tracker_app.models import User, Team, Activity, Leaderboard, Workout
 from django.conf import settings
 from pymongo import MongoClient
 from datetime import timedelta
