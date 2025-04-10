@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-mn%^!o_ypuy0ol#acx@%f2mjw*lum78&(=dwr(*&&_9=%k2(e3
 DEBUG = True
 
 # Add Codespace URL and localhost to ALLOWED_HOSTS
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'verbose-space-tribble-g6pj7667vpcvxj9-8000.app.github.dev']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'djongo',
     'tracker_app',
     'octofit_tracker',
+    'rest_framework',
     # Enable CORS for cross-origin requests
     'corsheaders',
 ]
